@@ -1,13 +1,18 @@
 .background {
   background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-
+.newsFeed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #article {
   background-color: oldlace;
+  width: 60vw;
 }
 
 #header {

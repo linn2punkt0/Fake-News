@@ -27,7 +27,7 @@ require __DIR__.'/functions.php';
       </div>
         </header>
 
-        <div class= "container">
+        <div class= "newsFeed">
             <?php foreach ($newsItems as $newsItem) :?>
             <article class="jumbotron" id="article">
                 <h2><?= $newsItem['title']; ?></h2>
