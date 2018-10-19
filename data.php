@@ -6,36 +6,6 @@ declare(strict_types=1);
 // This is the file where you can keep your data arrays such as articles and
 // authors.
 
-$newsItem = [
-    ['title' => 'Alohamora', 'content' => $article1, 'author' => $authors[1]['full-name'], 'publish date' => , 'likes' => 19],
-    ['title' => 'Boggarts lavender robes', 'content' => $article2, 'author' => '', 'publish date' => '', 'likes' => 27],
-    ['title' => 'Thestral dirigible plums', 'content' => $article3, 'author' => '', 'publish date' => '', 'likes' => 15],
-    ['title' => 'Half-giant jinxes', 'content' => $article4, 'author' => '', 'publish date' => '', 'likes' => 11],
-    ['title' => 'Prefect\'s bathroom', 'content' => $article5, 'author' => '', 'publish date' => '', 'likes' => 33],
-    ['title' => 'Toad-like smile', 'content' => $article6, 'author' => '', 'publish date' => '', 'likes' => 25],
-    ['title' => 'Squashy armchairs', 'content' => $article7, 'author' => '', 'publish date' => '', 'likes' => 51],
-    ['title' => 'Nearly-Headless Nick', 'content' => $article8, 'author' => '', 'publish date' => '', 'likes' => 23],
-    ['title' => 'Invisibility Cloak cauldron cakes', 'content' => $article9, 'author' => '', 'publish date' => '', 'likes' => 41],
-    ['title' => 'Bee in your bonnet', 'content' => $article10, 'author' => '', 'publish date' => '', 'likes' => 22],
-    ['title' => 'Fat Lady baubles', 'content' => $article11, 'author' => '', 'publish date' => '', 'likes' => 70],
-    ['title' => 'Viktor Krum hexed memory', 'content' => $article12, 'author' => '', 'publish date' => '', 'likes' => 47],
-    ['title' => 'Whomping Willow three ', 'content' => $article13, 'author' => '', 'publish date' => '', 'likes' => 38],
-    ['title' => 'Hagrid broomstick mischief managed', 'content' => $article14, 'author' => '', 'publish date' => '', 'likes' => 83],
-
-
-];
-
-$authors = [
-    ['ID' => '1', 'full-name' => 'Hermione Granger'],
-    ['ID' => '2', 'full-name' => 'Ronald Weasley'],
-    ['ID' => '3', 'full-name' => 'Harry Potter'],
-    ['ID' => '4', 'full-name' => 'Draco Malfoy'],
-    ['ID' => '5', 'full-name' => 'Luna Lovegood'],
-    ['ID' => '6', 'full-name' => 'Severus Snape'],
-    ['ID' => '7', 'full-name' => 'Prof. Albus Dumbledore'],
-];
-
-
 $article1 = 
 "Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
 
@@ -99,3 +69,35 @@ $article14 =
 "Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
 
 Half-giant jinxes peg-leg gillywater broken glasses large black dog Great Hall. Nearly-Headless Nick now string them together, and answer me this, which creature would you be unwilling to kiss? Poltergeist sticking charm, troll umbrella stand flying cars golden locket Lily Potter. Pumpkin juice Trevor wave your wand out glass orbs, a Grim knitted hats. Stan Shunpike doe patronus, suck his soul Muggle-Born large order of drills the trace. Bred in captivity fell through the veil, quaffle blue flame ickle diddykins Aragog. Yer a wizard, Harry Doxycide the woes of Mrs. Weasley Goblet of Fire.";
+
+$authors = [
+    ['ID' => '1', 'full-name' => 'Hermione Granger'],
+    ['ID' => '2', 'full-name' => 'Ronald Weasley'],
+    ['ID' => '3', 'full-name' => 'Harry Potter'],
+    ['ID' => '4', 'full-name' => 'Draco Malfoy'],
+    ['ID' => '5', 'full-name' => 'Luna Lovegood'],
+    ['ID' => '6', 'full-name' => 'Severus Snape'],
+    ['ID' => '7', 'full-name' => 'Prof. Albus Dumbledore'],
+];
+
+
+$newsItems = [
+    ['title' => 'Alohamora', 'content' => $article1, 'author' => $authors[0]['full-name'], 'publish date' => date("21/07-2007"), 'likes' => 19],
+    ['title' => 'Boggarts lavender robes', 'content' => $article2, 'author' => $authors[1]['full-name'], 'publish date' => '', 'likes' => 27],
+    ['title' => 'Thestral dirigible plums', 'content' => $article3, 'author' => $authors[4]['full-name'], 'publish date' => '', 'likes' => 15],
+    ['title' => 'Half-giant jinxes', 'content' => $article4, 'author' => $authors[2]['full-name'], 'publish date' => '', 'likes' => 11],
+    ['title' => 'Prefect\'s bathroom', 'content' => $article5, 'author' => $authors[3]['full-name'], 'publish date' => '', 'likes' => 33],
+    ['title' => 'Toad-like smile', 'content' => $article6, 'author' => $authors[0]['full-name'], 'publish date' => '', 'likes' => 25],
+    ['title' => 'Squashy armchairs', 'content' => $article7, 'author' => $authors[1]['full-name'], 'publish date' => '', 'likes' => 51],
+    ['title' => 'Nearly-Headless Nick', 'content' => $article8, 'author' => $authors[6]['full-name'], 'publish date' => '', 'likes' => 23],
+    ['title' => 'Invisibility Cloak cauldron cakes', 'content' => $article9, 'author' => $authors[4]['full-name'], 'publish date' => '', 'likes' => 41],
+    ['title' => 'Bee in your bonnet', 'content' => $article10, 'author' => $authors[6]['full-name'], 'publish date' => '', 'likes' => 22],
+    ['title' => 'Fat Lady baubles', 'content' => $article11, 'author' => $authors[3]['full-name'], 'publish date' => '', 'likes' => 70],
+    ['title' => 'Viktor Krum hexed memory', 'content' => $article12, 'author' => $authors[5]['full-name'], 'publish date' => '', 'likes' => 47],
+    ['title' => 'Whomping Willow three ', 'content' => $article13, 'author' => $authors[5]['full-name'], 'publish date' => '', 'likes' => 38],
+    ['title' => 'Hagrid broomstick mischief managed', 'content' => $article14, 'author' => $authors[2]['full-name'], 'publish date' => '', 'likes' => 83],
+
+
+];
+
+$currentDate = date("d/m-Y");

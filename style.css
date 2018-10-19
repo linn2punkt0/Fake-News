@@ -1,3 +1,24 @@
-body {
-  background-color: darkblue;
+.background {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#article {
+  background-color: oldlace;
+}
+
+#header {
+  width: 96vw;
+  background-color: oldlace;
+  text-align: center;
+}
+.articleInfo {
+  display: flex;
+  flex-direction: row;
+}
+.publishInfo {
+  margin-right: 20px;
 }
