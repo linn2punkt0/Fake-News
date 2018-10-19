@@ -28,12 +28,12 @@ require __DIR__.'/functions.php';
         </header>
 
         <div class= "newsFeed">
-            <?php foreach ($newsItems as $newsItem) :?>
+            <?php foreach (array_reverse($newsItems) as $newsItem) :?>
             <article class="jumbotron" id="article">
                 <h2><?= $newsItem['title']; ?></h2>
                 <div class= 'articleInfo'>
                     <h5 class="publishInfo"><?= $newsItem['author']; ?></h5>
-                    <h5 class="publishInfo"><?= $newsItem['publish date']; ?> </h5>
+                    <h5 class="publishInfo"><?= date("d/m-Y", $newsItem['publishDate']); ?>
                 </div>
                 <p><?= $newsItem['content']; ?></p>
                 <button type="button" class="btn btn-primary btn-sm"><?= $newsItem['likes'] . " Likes" ?></button>
