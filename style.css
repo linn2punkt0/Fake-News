@@ -1,9 +1,26 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 .background {
+  width: 100vw;
   background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.navbar {
+  background-color: oldlace;
+}
+#navbar {
+  width: 96vw;
+}
+.custom-select {
+  margin-left: auto;
+  background-color: rgb(248, 247, 244);
 }
 .newsFeed {
   display: flex;
@@ -14,15 +31,21 @@
   background-color: oldlace;
   width: 60vw;
 }
-
-#header {
-  width: 96vw;
-  background-color: oldlace;
-  text-align: center;
-}
 .articleInfo {
   display: flex;
   flex-direction: row;
+}
+.content {
+}
+.gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.gifContainer img {
+  width: 400px;
+  margin: 0px 10px 10px 10px;
+  border-radius: 30px;
 }
 .publishInfo {
   margin-right: 20px;
