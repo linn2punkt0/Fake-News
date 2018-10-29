@@ -14,9 +14,8 @@
 }
 .navbar {
   background-color: oldlace;
-}
-#navbar {
   width: 96vw;
+  margin: 5px;
 }
 .custom-select {
   margin-left: auto;

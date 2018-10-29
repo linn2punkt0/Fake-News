@@ -22,7 +22,7 @@ $sortBy = $_GET['sortBy'] ?? 0;
         <title>The Daily Prophet</title>
     </head>
     <body class="background">
-        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between" id="navbar" >
+        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between">
             <h2>The Daily Prophet</h2>
                 <div class="form-group m-0">
                 <form action="index.php" method="get">

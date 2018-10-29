@@ -7,12 +7,17 @@ declare(strict_types=1);
 // execute/run any functions in this file. Keep it dumb.
 
 
-// Sort articles by date
-function sortByDate($a,$b){
+/**
+ * Sort articles by date
+ *
+ * @param array $a
+ * @param array $b
+ * @return integer
+ */
+function sortByDate(array $a, array $b): int {
     return $a['publishDate'] - $b['publishDate'];
 
 };
-
 
 
 
@@ -24,8 +29,15 @@ else{
     $selectedVal = 0;
 }
 
-//Selected drop-down
-function selected($value1,$value2)
+
+/**
+ * Selected drop-down
+ *
+ * @param string $value1
+ * @param integer $value2
+ * @return void
+ */
+function selected(string $value1, int $value2)
    {
      if ($value1 == $value2) 
      {
@@ -38,8 +50,15 @@ function selected($value1,$value2)
    }
 
 
-// Sort by value from drop-down-menu
-function sortByDropDown($array,$sortBy){
+
+/**
+ * Sort by value from drop-down-menu
+ *
+ * @param array $array
+ * @param string $sortBy
+ * @return array
+ */
+function sortByDropDown(array $array,string $sortBy): array{
     usort($array, 'sortByDate');
     if ($sortBy === "2") {
         return $array;
@@ -50,12 +69,6 @@ function sortByDropDown($array,$sortBy){
     }
     
 };
-
-
-// function to get author by ID
-// function getAuthor(){
-
-// };
 
 
 // Click-counter for Like-button
