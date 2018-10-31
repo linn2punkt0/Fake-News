@@ -34,8 +34,6 @@
   display: flex;
   flex-direction: row;
 }
-.content {
-}
 .gifContainer {
   display: flex;
   justify-content: center;

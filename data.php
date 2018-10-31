@@ -2,51 +2,41 @@
 
 declare (strict_types = 1);
 
-// This is the file where you can keep your data arrays such as articles and
-// authors.
-
 $authors = [
     [
         'ID' => '1', 
         'full-name' => 'Hermione Granger',
         'gif' => 'https://media.giphy.com/media/Ofrh9WfS93ZLO/giphy.gif',
-        'img' => ''
     ],
     [
         'ID' => '2', 
         'full-name' => 'Ronald Weasley',
         'gif' => 'https://media.giphy.com/media/13tH5DzqoQ2yCk/giphy.gif',
-        'img' => ''
     ],
     [
         'ID' => '3', 
         'full-name' => 'Harry Potter',
         'gif' => 'https://media.giphy.com/media/Llzk5TKYvgM1i/giphy.gif',
-        'img' => ''
     ],
     [
         'ID' => '4', 
         'full-name' => 'Draco Malfoy',
         'gif' => 'https://media.giphy.com/media/SWOuNFbFpR5N6/giphy.gif',
-        'img' => 'draco.gif'
     ],
     [
         'ID' => '5', 
         'full-name' => 'Luna Lovegood',
         'gif' => 'https://media.giphy.com/media/eptieZD9Gjneo/giphy.gif',
-        'img' => ''
     ],
     [
         'ID' => '6', 
         'full-name' => 'Severus Snape',
         'gif' => 'https://media.giphy.com/media/TGLLaCKWwxUVq/giphy.gif',
-        'img' => ''
     ],
     [
         'ID' => '7', 
         'full-name' => 'Prof. Albus Dumbledore',
         'gif' => 'https://media.giphy.com/media/lzZQRZN3MBXbO/giphy.gif',
-        'img' => ''
     ],
 ];
 

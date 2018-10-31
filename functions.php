@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-
-// This is the file where you can keep all your functions. Remember to NOT
-// execute/run any functions in this file. Keep it dumb.
-
-
 /**
  * Sort articles by date
  *
@@ -26,7 +21,7 @@ if (isset($_GET['sortBy'])) {
     $selectedVal = $_GET['sortBy'];
 }
 else{
-    $selectedVal = 0;
+    $selectedVal = "0";
 }
 
 
@@ -69,9 +64,3 @@ function sortByDropDown(array $array,string $sortBy): array{
     }
     
 };
-
-
-// Click-counter for Like-button
-// function clickCounter(){
-
-// };
