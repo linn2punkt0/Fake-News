@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: center;
 }
-#article {
+.jumbotron {
   background-color: oldlace;
   width: 60vw;
 }
@@ -34,16 +34,18 @@
   display: flex;
   flex-direction: row;
 }
+.publishInfo {
+  margin-right: 20px;
+}
 .gifContainer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
+  max-width: 400px;
 }
 .gifContainer img {
-  width: 400px;
+  width: 100%;
   margin: 0px 10px 10px 10px;
   border-radius: 30px;
-}
-.publishInfo {
-  margin-right: 20px;
 }

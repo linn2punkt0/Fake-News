@@ -35,7 +35,7 @@ $sortBy = $_GET['sortBy'] ?? "0";
 
         <div class= "newsFeed">
             <?php foreach ($sortedItems as $newsItem) :?>
-            <article class="jumbotron" id="article">
+            <article class="jumbotron">
                 <h2><?= $newsItem['title']; ?></h2>
                 <div class= 'articleInfo'>
                     <h5 class="publishInfo"><?= $newsItem['author']; ?></h5>
@@ -49,11 +49,10 @@ $sortBy = $_GET['sortBy'] ?? "0";
                         <img src="<?= $newsItem['authorImage'];?>" alt="Image"> 
                     </div>
                 </div> 
-                <button type="button" class="btn btn-primary btn-sm"><?= $newsItem['likes'] . " Likes" ?></button>
-                <button type="button" class="btn btn-primary btn-sm"><?= 'Read more...' ?></button>
+                <button type="button" class="btn btn-primary btn-sm likes" ><?= $newsItem['likes'] . " Likes" ?></button>
             </article>
             <?php endforeach; ?>
         </div>
-
+		<script src="./functions.js"></script>
     </body>
 </html>
