@@ -22,13 +22,13 @@ $sortBy = $_GET['sortBy'] ?? "0";
         <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between">
             <h2>The Daily Prophet</h2>
                 <div class="form-group m-0">
-                <form action="index.php" method="get">
-                    <select name="sortBy" class="custom-select" onchange='this.form.submit()'>
-                        <option <?php selected($sortBy,0);?> selected>Sort by</option>
-                        <option <?php selected($sortBy,1);?> value="1">Most recent</option>
-                        <option <?php selected($sortBy,2);?> value="2">Most ancient</option>
-                    </select>
-                </form>
+					<form action="index.php" method="get">
+						<select name="sortBy" class="custom-select" onchange='this.form.submit()'>
+							<option <?php selected($sortBy,0);?> selected>Sort by</option>
+							<option <?php selected($sortBy,1);?> value="1">Most recent</option>
+							<option <?php selected($sortBy,2);?> value="2">Most ancient</option>
+						</select>
+					</form>
                 </div>
             </div>
         </nav>

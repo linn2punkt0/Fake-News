@@ -1,5 +1,5 @@
 /**
- * Increment like-count when you click button.
+ * Increment like-count when you click like-button.
  */
 const likeButtons = document.querySelectorAll(".likes");
 likeButtons.forEach(likeButton => {

@@ -20,7 +20,7 @@ function sortByDate(array $a, array $b): int {
 if (isset($_GET['sortBy'])) {
     $selectedVal = $_GET['sortBy'];
 }
-else{
+else {
     $selectedVal = "0";
 }
 
@@ -34,11 +34,10 @@ else{
  */
 function selected(string $value1, int $value2)
    {
-     if ($value1 == $value2) 
-     {
+     if ($value1 == $value2){
       echo 'selected="selected"';
-     } else 
-     {
+	 } 
+	 else {
        echo '';
      }
      return;
@@ -59,7 +58,6 @@ function sortByDropDown(array $array,string $sortBy): array{
         return $array;
     }
     else {
-       
         return array_reverse($array);
     }
     
