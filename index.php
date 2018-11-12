@@ -4,8 +4,17 @@ declare(strict_types=1);
 require __DIR__.'/data.php';
 require __DIR__.'/functions.php';
 
+// Receive value from drop-down-menu
+if (isset($_GET['sortBy'])) {
+    $selectedVal = $_GET['sortBy'];
+}
+else {
+    $selectedVal = "0";
+}
+
 $sortedItems = sortByDropDown($newsItems, $selectedVal);
 $sortBy = $_GET['sortBy'] ?? "0";
+
 ?>
 
 

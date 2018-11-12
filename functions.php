@@ -15,16 +15,6 @@ function sortByDate(array $a, array $b): int {
 };
 
 
-
-// Receive value from drop-down-menu
-if (isset($_GET['sortBy'])) {
-    $selectedVal = $_GET['sortBy'];
-}
-else {
-    $selectedVal = "0";
-}
-
-
 /**
  * Selected drop-down
  *
@@ -49,12 +39,12 @@ function selected(string $value1, int $value2)
  * Sort by value from drop-down-menu
  *
  * @param array $array
- * @param string $sortBy
+ * @param string $value
  * @return array
  */
-function sortByDropDown(array $array,string $sortBy): array{
+function sortByDropDown(array $array,string $value): array{
     usort($array, 'sortByDate');
-    if ($sortBy === "2") {
+    if ($value === "2") {
         return $array;
     }
     else {
